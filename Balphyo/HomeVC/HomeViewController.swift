@@ -151,6 +151,16 @@ class HomeViewController: UIViewController {
             let nextVC = ScriptTitleViewController()
             navigationController?.pushViewController(nextVC, animated: true)
         }
+        if sectionView == timeCalculatorView {
+            let nextVC = TimeTitleViewController()
+            navigationController?.pushViewController(nextVC, animated: true)
+        }
+        if sectionView == flowControllerView {
+            let alert = UIAlertController(title: "발표 훈련 플로우 컨트롤러", message: "추후 업데이트 예정입니다!\n많은 기대 부탁드립니다 :)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
     }
     @objc private func storeButtonTapped(){
         let nextVC = StorageListViewController()

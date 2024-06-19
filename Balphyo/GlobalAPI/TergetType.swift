@@ -40,6 +40,11 @@ extension TargetType {
                 HTTPHeaderField.contentType.rawValue: HTTPHeaderFieldValue.json.rawValue,
                 HTTPHeaderField.uid.rawValue: uid
             ]
+        case .audio:
+            return [
+                HTTPHeaderField.contentType.rawValue: HTTPHeaderFieldValue.json.rawValue,
+                HTTPHeaderField.acceptType.rawValue : HTTPHeaderFieldValue.audio.rawValue
+            ]
         /*case .refreshToken:
             return [
                 HTTPHeaderField.contentType.rawValue: HTTPHeaderFieldValue.json.rawValue,
@@ -75,6 +80,9 @@ extension TargetType {
         
         switch headerType {
         case .plain, .hasToken:
+            urlRequest.setValue(HTTPHeaderFieldValue.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+        case .audio:
+            urlRequest.setValue(HTTPHeaderFieldValue.audio.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
             urlRequest.setValue(HTTPHeaderFieldValue.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
         }
         

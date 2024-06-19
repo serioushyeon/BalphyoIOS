@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0367DCD220676D06F9714C11 /* Pods_Balphyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27B1D88DB6164020C2FC9E1 /* Pods_Balphyo.framework */; };
+		3C2C925C2C2271C00078E0C2 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C925B2C2271C00078E0C2 /* BottomSheetViewController.swift */; };
+		3C2C925E2C22750E0078E0C2 /* BottomSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C925D2C22750E0078E0C2 /* BottomSheetPresentationController.swift */; };
+		3C2C92602C2275310078E0C2 /* BottomSheetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C925F2C2275310078E0C2 /* BottomSheetDelegate.swift */; };
+		3C2C92622C2275590078E0C2 /* BottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C92612C2275590078E0C2 /* BottomSheetTableViewCell.swift */; };
+		3C2C92642C2277CA0078E0C2 /* BottomSheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C92632C2277CA0078E0C2 /* BottomSheetManager.swift */; };
 		3C45E3442C19574C00A85FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3432C19574C00A85FC8 /* AppDelegate.swift */; };
 		3C45E3462C19574C00A85FC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3452C19574C00A85FC8 /* SceneDelegate.swift */; };
 		3C45E3482C19574C00A85FC8 /* ScriptTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3472C19574C00A85FC8 /* ScriptTitleViewController.swift */; };
@@ -66,9 +71,29 @@
 		3C45E3DD2C215F8C00A85FC8 /* ScriptEditRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3DC2C215F8C00A85FC8 /* ScriptEditRequest.swift */; };
 		3C45E3DF2C21616700A85FC8 /* ScriptEditResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3DE2C21616700A85FC8 /* ScriptEditResponse.swift */; };
 		3C45E3E12C21701200A85FC8 /* ScriptDeleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3E02C21701200A85FC8 /* ScriptDeleteResponse.swift */; };
+		3C45E3E62C21796000A85FC8 /* TimeTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3E52C21796000A85FC8 /* TimeTitleViewController.swift */; };
+		3C45E3EA2C217A4600A85FC8 /* ScriptTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3E92C217A4600A85FC8 /* ScriptTimeManager.swift */; };
+		3C45E3EC2C217A9F00A85FC8 /* TimeScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3EB2C217A9F00A85FC8 /* TimeScriptViewController.swift */; };
+		3C45E3EE2C21810200A85FC8 /* TimeTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3ED2C21810200A85FC8 /* TimeTimeViewController.swift */; };
+		3C45E3F02C21C63400A85FC8 /* TimeSpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3EF2C21C63400A85FC8 /* TimeSpeedViewController.swift */; };
+		3C45E3F62C21D28800A85FC8 /* minusone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C45E3F12C21D28800A85FC8 /* minusone.mp3 */; };
+		3C45E3F72C21D28800A85FC8 /* two.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C45E3F22C21D28800A85FC8 /* two.mp3 */; };
+		3C45E3F82C21D28800A85FC8 /* zero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C45E3F32C21D28800A85FC8 /* zero.mp3 */; };
+		3C45E3F92C21D28800A85FC8 /* one.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C45E3F42C21D28800A85FC8 /* one.mp3 */; };
+		3C45E3FA2C21D28800A85FC8 /* minustwo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3C45E3F52C21D28800A85FC8 /* minustwo.mp3 */; };
+		3C45E3FC2C21D6A000A85FC8 /* TimeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E3FB2C21D6A000A85FC8 /* TimeResultViewController.swift */; };
+		3C45E4042C21D78B00A85FC8 /* GenerateAudioRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E4032C21D78B00A85FC8 /* GenerateAudioRequest.swift */; };
+		3C45E4062C21D7BC00A85FC8 /* GenerateAudioResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E4052C21D7BC00A85FC8 /* GenerateAudioResponse.swift */; };
+		3C45E4082C21D81700A85FC8 /* GenerateAudioTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E4072C21D81700A85FC8 /* GenerateAudioTarget.swift */; };
+		3C45E40A2C21DAA400A85FC8 /* GenerateAudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45E4092C21DAA400A85FC8 /* GenerateAudioService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C2C925B2C2271C00078E0C2 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		3C2C925D2C22750E0078E0C2 /* BottomSheetPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPresentationController.swift; sourceTree = "<group>"; };
+		3C2C925F2C2275310078E0C2 /* BottomSheetDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetDelegate.swift; sourceTree = "<group>"; };
+		3C2C92612C2275590078E0C2 /* BottomSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewCell.swift; sourceTree = "<group>"; };
+		3C2C92632C2277CA0078E0C2 /* BottomSheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetManager.swift; sourceTree = "<group>"; };
 		3C45E3402C19574C00A85FC8 /* Balphyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Balphyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C45E3432C19574C00A85FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C45E3452C19574C00A85FC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +154,21 @@
 		3C45E3DC2C215F8C00A85FC8 /* ScriptEditRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditRequest.swift; sourceTree = "<group>"; };
 		3C45E3DE2C21616700A85FC8 /* ScriptEditResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditResponse.swift; sourceTree = "<group>"; };
 		3C45E3E02C21701200A85FC8 /* ScriptDeleteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptDeleteResponse.swift; sourceTree = "<group>"; };
+		3C45E3E52C21796000A85FC8 /* TimeTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTitleViewController.swift; sourceTree = "<group>"; };
+		3C45E3E92C217A4600A85FC8 /* ScriptTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptTimeManager.swift; sourceTree = "<group>"; };
+		3C45E3EB2C217A9F00A85FC8 /* TimeScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeScriptViewController.swift; sourceTree = "<group>"; };
+		3C45E3ED2C21810200A85FC8 /* TimeTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTimeViewController.swift; sourceTree = "<group>"; };
+		3C45E3EF2C21C63400A85FC8 /* TimeSpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSpeedViewController.swift; sourceTree = "<group>"; };
+		3C45E3F12C21D28800A85FC8 /* minusone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = minusone.mp3; sourceTree = "<group>"; };
+		3C45E3F22C21D28800A85FC8 /* two.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = two.mp3; sourceTree = "<group>"; };
+		3C45E3F32C21D28800A85FC8 /* zero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zero.mp3; sourceTree = "<group>"; };
+		3C45E3F42C21D28800A85FC8 /* one.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = one.mp3; sourceTree = "<group>"; };
+		3C45E3F52C21D28800A85FC8 /* minustwo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = minustwo.mp3; sourceTree = "<group>"; };
+		3C45E3FB2C21D6A000A85FC8 /* TimeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeResultViewController.swift; sourceTree = "<group>"; };
+		3C45E4032C21D78B00A85FC8 /* GenerateAudioRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAudioRequest.swift; sourceTree = "<group>"; };
+		3C45E4052C21D7BC00A85FC8 /* GenerateAudioResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAudioResponse.swift; sourceTree = "<group>"; };
+		3C45E4072C21D81700A85FC8 /* GenerateAudioTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAudioTarget.swift; sourceTree = "<group>"; };
+		3C45E4092C21DAA400A85FC8 /* GenerateAudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAudioService.swift; sourceTree = "<group>"; };
 		AB3564624A0AB8267357EF60 /* Pods-Balphyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Balphyo.debug.xcconfig"; path = "Target Support Files/Pods-Balphyo/Pods-Balphyo.debug.xcconfig"; sourceTree = "<group>"; };
 		AC28C43616D42A11BBBB7535 /* Pods-Balphyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Balphyo.release.xcconfig"; path = "Target Support Files/Pods-Balphyo/Pods-Balphyo.release.xcconfig"; sourceTree = "<group>"; };
 		B27B1D88DB6164020C2FC9E1 /* Pods_Balphyo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Balphyo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +186,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C2C925A2C2271A90078E0C2 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C925B2C2271C00078E0C2 /* BottomSheetViewController.swift */,
+				3C2C925D2C22750E0078E0C2 /* BottomSheetPresentationController.swift */,
+				3C2C925F2C2275310078E0C2 /* BottomSheetDelegate.swift */,
+				3C2C92612C2275590078E0C2 /* BottomSheetTableViewCell.swift */,
+				3C2C92632C2277CA0078E0C2 /* BottomSheetManager.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
 		3C45E3372C19574C00A85FC8 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +219,7 @@
 		3C45E3422C19574C00A85FC8 /* Balphyo */ = {
 			isa = PBXGroup;
 			children = (
+				3C45E3E42C21793E00A85FC8 /* ScriptTimeVC */,
 				3C45E3CE2C20921C00A85FC8 /* StorageVC */,
 				3C45E38E2C204FF200A85FC8 /* GlobalAPI */,
 				3C45E38B2C203FB100A85FC8 /* LoginVC */,
@@ -180,6 +233,11 @@
 				3C45E3492C19574C00A85FC8 /* Main.storyboard */,
 				3C45E34C2C19574E00A85FC8 /* Assets.xcassets */,
 				3C45E3812C1C96D100A85FC8 /* Loading.gif */,
+				3C45E3F12C21D28800A85FC8 /* minusone.mp3 */,
+				3C45E3F52C21D28800A85FC8 /* minustwo.mp3 */,
+				3C45E3F42C21D28800A85FC8 /* one.mp3 */,
+				3C45E3F22C21D28800A85FC8 /* two.mp3 */,
+				3C45E3F32C21D28800A85FC8 /* zero.mp3 */,
 				3C45E34E2C19574E00A85FC8 /* LaunchScreen.storyboard */,
 				3C45E3512C19574E00A85FC8 /* Info.plist */,
 				3C45E3572C196BBB00A85FC8 /* UIColor.swift */,
@@ -203,6 +261,7 @@
 		3C45E3662C19747700A85FC8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3C2C925A2C2271A90078E0C2 /* BottomSheet */,
 				3C45E3672C19749200A85FC8 /* CustomTextField.swift */,
 				3C45E3692C19877E00A85FC8 /* BaseNavigationController.swift */,
 				3C45E3CC2C208D2300A85FC8 /* StoreButton.swift */,
@@ -270,6 +329,7 @@
 		3C45E38E2C204FF200A85FC8 /* GlobalAPI */ = {
 			isa = PBXGroup;
 			children = (
+				3C45E3FD2C21D72100A85FC8 /* GenerateAudioAPI */,
 				3C45E3BE2C207E3800A85FC8 /* ScriptCrudAPI */,
 				3C45E3AD2C206DB800A85FC8 /* GenerateScriptAPI */,
 				3C45E39F2C20570700A85FC8 /* LoginAPI */,
@@ -470,6 +530,86 @@
 			path = ScriptCollectionView;
 			sourceTree = "<group>";
 		};
+		3C45E3E42C21793E00A85FC8 /* ScriptTimeVC */ = {
+			isa = PBXGroup;
+			children = (
+				3C45E3E82C217A2500A85FC8 /* Manager */,
+				3C45E3E72C217A1C00A85FC8 /* Model */,
+				3C45E3E52C21796000A85FC8 /* TimeTitleViewController.swift */,
+				3C45E3EB2C217A9F00A85FC8 /* TimeScriptViewController.swift */,
+				3C45E3ED2C21810200A85FC8 /* TimeTimeViewController.swift */,
+				3C45E3EF2C21C63400A85FC8 /* TimeSpeedViewController.swift */,
+				3C45E3FB2C21D6A000A85FC8 /* TimeResultViewController.swift */,
+			);
+			path = ScriptTimeVC;
+			sourceTree = "<group>";
+		};
+		3C45E3E72C217A1C00A85FC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C45E3E82C217A2500A85FC8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3C45E3E92C217A4600A85FC8 /* ScriptTimeManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3C45E3FD2C21D72100A85FC8 /* GenerateAudioAPI */ = {
+			isa = PBXGroup;
+			children = (
+				3C45E4002C21D76B00A85FC8 /* Service */,
+				3C45E3FF2C21D76500A85FC8 /* Router */,
+				3C45E3FE2C21D76000A85FC8 /* DTO */,
+			);
+			path = GenerateAudioAPI;
+			sourceTree = "<group>";
+		};
+		3C45E3FE2C21D76000A85FC8 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				3C45E4022C21D77700A85FC8 /* Response */,
+				3C45E4012C21D77000A85FC8 /* Request */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		3C45E3FF2C21D76500A85FC8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3C45E4072C21D81700A85FC8 /* GenerateAudioTarget.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3C45E4002C21D76B00A85FC8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3C45E4092C21DAA400A85FC8 /* GenerateAudioService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3C45E4012C21D77000A85FC8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				3C45E4032C21D78B00A85FC8 /* GenerateAudioRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		3C45E4022C21D77700A85FC8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				3C45E4052C21D7BC00A85FC8 /* GenerateAudioResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		A2C685F81BFA06939E1D2F1B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,12 +688,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C45E34D2C19574E00A85FC8 /* Assets.xcassets in Resources */,
+				3C45E3F92C21D28800A85FC8 /* one.mp3 in Resources */,
 				3C45E3612C19707900A85FC8 /* Pretendard-Bold.otf in Resources */,
+				3C45E3F82C21D28800A85FC8 /* zero.mp3 in Resources */,
+				3C45E3F62C21D28800A85FC8 /* minusone.mp3 in Resources */,
 				3C45E3822C1C96D100A85FC8 /* Loading.gif in Resources */,
 				3C45E3622C19707900A85FC8 /* Pretendard-ExtraBold.otf in Resources */,
 				3C45E3652C19707900A85FC8 /* Pretendard-Medium.otf in Resources */,
 				3C45E3632C19707900A85FC8 /* Pretendard-SemiBold.otf in Resources */,
 				3C45E3642C19707900A85FC8 /* Pretendard-Regular.otf in Resources */,
+				3C45E3FA2C21D28800A85FC8 /* minustwo.mp3 in Resources */,
+				3C45E3F72C21D28800A85FC8 /* two.mp3 in Resources */,
 				3C45E3502C19574E00A85FC8 /* Base in Resources */,
 				3C45E34B2C19574C00A85FC8 /* Base in Resources */,
 			);
@@ -610,7 +755,9 @@
 			files = (
 				3C45E3AC2C205ECF00A85FC8 /* GenerateUidResponse.swift in Sources */,
 				3C45E38D2C203FC200A85FC8 /* LoginViewController.swift in Sources */,
+				3C2C92622C2275590078E0C2 /* BottomSheetTableViewCell.swift in Sources */,
 				3C45E3CB2C20872A00A85FC8 /* StoreScriptResponse.swift in Sources */,
+				3C45E3FC2C21D6A000A85FC8 /* TimeResultViewController.swift in Sources */,
 				3C45E39E2C20541200A85FC8 /* NetworkService.swift in Sources */,
 				3C45E3482C19574C00A85FC8 /* ScriptTitleViewController.swift in Sources */,
 				3C45E36A2C19877E00A85FC8 /* BaseNavigationController.swift in Sources */,
@@ -618,12 +765,15 @@
 				3C45E39A2C20518A00A85FC8 /* APIEventLogger.swift in Sources */,
 				3C45E3DD2C215F8C00A85FC8 /* ScriptEditRequest.swift in Sources */,
 				3C45E3B62C206E0500A85FC8 /* GenerateScriptService.swift in Sources */,
+				3C45E3E62C21796000A85FC8 /* TimeTitleViewController.swift in Sources */,
 				3C45E3802C1C93CE00A85FC8 /* ScriptLoadingViewController.swift in Sources */,
 				3C45E3B82C206EE600A85FC8 /* GenerateScriptResponse.swift in Sources */,
 				3C45E38A2C203F2700A85FC8 /* SplashViewController.swift in Sources */,
 				3C45E3792C1C76F500A85FC8 /* SubTopicCollectionViewCell.swift in Sources */,
 				3C45E3582C196BBB00A85FC8 /* UIColor.swift in Sources */,
+				3C45E3EC2C217A9F00A85FC8 /* TimeScriptViewController.swift in Sources */,
 				3C45E3BA2C20700500A85FC8 /* GenerateScriptRequest.swift in Sources */,
+				3C45E3EA2C217A4600A85FC8 /* ScriptTimeManager.swift in Sources */,
 				3C45E3D32C2093F300A85FC8 /* ScriptTableViewCell.swift in Sources */,
 				3C45E39C2C2051C000A85FC8 /* BalphyoRequestInterceptor.swift in Sources */,
 				3C45E37E2C1C8AF100A85FC8 /* ScriptTimeViewController.swift in Sources */,
@@ -638,23 +788,33 @@
 				3C45E3C32C2085F600A85FC8 /* ScriptCrudService.swift in Sources */,
 				3C45E3712C19975F00A85FC8 /* ScriptSubTopicViewController.swift in Sources */,
 				3C45E3DF2C21616700A85FC8 /* ScriptEditResponse.swift in Sources */,
+				3C2C92642C2277CA0078E0C2 /* BottomSheetManager.swift in Sources */,
 				3C45E3962C20514B00A85FC8 /* HTTPHeaderField.swift in Sources */,
 				3C45E3872C1CA11600A85FC8 /* HomeViewController.swift in Sources */,
 				3C45E36F2C19968400A85FC8 /* ScriptTopicViewController.swift in Sources */,
+				3C45E3EE2C21810200A85FC8 /* TimeTimeViewController.swift in Sources */,
 				3C45E3C52C20861000A85FC8 /* ScriptCrudTarget.swift in Sources */,
 				3C45E3D72C2143A700A85FC8 /* ScriptEditViewController.swift in Sources */,
 				3C45E3E12C21701200A85FC8 /* ScriptDeleteResponse.swift in Sources */,
 				3C45E3CD2C208D2300A85FC8 /* StoreButton.swift in Sources */,
 				3C45E3982C20517600A85FC8 /* APIRequestLoader.swift in Sources */,
+				3C2C925C2C2271C00078E0C2 /* BottomSheetViewController.swift in Sources */,
 				3C45E3942C20512E00A85FC8 /* TergetType.swift in Sources */,
+				3C45E40A2C21DAA400A85FC8 /* GenerateAudioService.swift in Sources */,
+				3C45E4082C21D81700A85FC8 /* GenerateAudioTarget.swift in Sources */,
+				3C45E3F02C21C63400A85FC8 /* TimeSpeedViewController.swift in Sources */,
 				3C45E37B2C1C880A00A85FC8 /* LeftAlignConllectionViewFlowLayout.swift in Sources */,
 				3C45E3AA2C20581600A85FC8 /* VerifyUidResponse.swift in Sources */,
 				3C45E35A2C196BD100A85FC8 /* UIFont.swift in Sources */,
 				3C45E3A82C20577B00A85FC8 /* LoginTarget.swift in Sources */,
 				3C45E3D52C2096DB00A85FC8 /* ScriptListResponse.swift in Sources */,
 				3C45E3922C2050E100A85FC8 /* TokenManager.swift in Sources */,
+				3C45E4062C21D7BC00A85FC8 /* GenerateAudioResponse.swift in Sources */,
+				3C45E4042C21D78B00A85FC8 /* GenerateAudioRequest.swift in Sources */,
 				3C45E3462C19574C00A85FC8 /* SceneDelegate.swift in Sources */,
+				3C2C92602C2275310078E0C2 /* BottomSheetDelegate.swift in Sources */,
 				3C45E3DB2C21464000A85FC8 /* ScriptDetailDeleteRequest.swift in Sources */,
+				3C2C925E2C22750E0078E0C2 /* BottomSheetPresentationController.swift in Sources */,
 				3C45E3C92C2086A500A85FC8 /* ScriptStoreRequest.swift in Sources */,
 				3C45E3902C20503800A85FC8 /* NetworkResult.swift in Sources */,
 			);

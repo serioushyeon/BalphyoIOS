@@ -1,18 +1,18 @@
 //
-//  ScriptTimeController.swift
+//  TimeTimeViewController.swift
 //  Balphyo
 //
-//  Created by jin on 6/14/24.
+//  Created by jin on 6/18/24.
 //
 
 import Foundation
 import Then
 import UIKit
 
-class ScriptTimeViewController : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class TimeTimeViewController : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     let instructionLabel = UILabel().then {
-        $0.text = "발표 시간을 알려주세요"
+        $0.text = "목표 발표 시간을 알려주세요"
         $0.textColor = .Black
         $0.textAlignment = .left
         $0.font = UIFont.Title()
@@ -26,7 +26,7 @@ class ScriptTimeViewController : UIViewController, UIPickerViewDelegate, UIPicke
         $0.backgroundColor = .clear
     }
     let noTimeLabel = UILabel().then {
-        $0.text = "원하는 발표 시간이 없어요"
+        $0.text = "정해진 발표 시간이 없어요"
         $0.font = UIFont.Medium()
         $0.textColor = .InputText
     }
@@ -63,7 +63,7 @@ class ScriptTimeViewController : UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     private func setupNavigationBar() {
-        self.title = "대본 생성"
+        self.title = "시간 계산"
         
         // 네비게이션 바 타이틀 폰트 설정
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.Large(), NSAttributedString.Key.foregroundColor: UIColor.Gray4]
@@ -76,7 +76,7 @@ class ScriptTimeViewController : UIViewController, UIPickerViewDelegate, UIPicke
         
         // 네비게이션 바 우측 텍스트 설정
         let progressLabel = UILabel().then{
-            $0.text = "4/4"
+            $0.text = "3/4"
             $0.font = UIFont.Medium()
             $0.textColor = .Gray4
         }
@@ -170,18 +170,18 @@ class ScriptTimeViewController : UIViewController, UIPickerViewDelegate, UIPicke
         navigationController?.popViewController(animated: true)
     }
     @objc func nextButtonTapped() {
-        
+        if isNoTime {
+            ScriptTimeManager.shard.secTime = 180
+        }
+        let nextVC = TimeSpeedViewController()
+        navigationController?.pushViewController(nextVC, animated: true)
         /*if scriptTitle.count >= 8 {
          let alert = UIAlertController(title: "대본 제목 길이 초과", message: "대본 제목은 8자 이하여야 합니다.", preferredStyle: .alert)
          alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
          present(alert, animated: true, completion: nil)
          return
          }*/
-
-        if isNoTime {
-            GenerateScriptManager.shard.secTime = 180
-        }
-        apiGenerateScript()
+        
     }
     
     // MARK: - UIPickerViewDelegate & UIPickerViewDataSource
@@ -219,7 +219,7 @@ class ScriptTimeViewController : UIViewController, UIPickerViewDelegate, UIPicke
             let selectedMinute = minutes[pickerView.selectedRow(inComponent: 0)]
             let selectedSecond = seconds[pickerView.selectedRow(inComponent: 1)]
             
-            GenerateScriptManager.shard.secTime =  selectedMinute*60 + selectedSecond
+            ScriptTimeManager.shard.secTime =  selectedMinute * 60 + selectedSecond
             // 초 부분의 데이터를 업데이트
             pickerView.reloadComponent(1)
         }
@@ -235,28 +235,6 @@ class ScriptTimeViewController : UIViewController, UIPickerViewDelegate, UIPicke
             return 110
         } else {
             return 110
-        }
-    }
-    func apiGenerateScript(){
-        let request = GenerateScriptRequest(
-            topic: GenerateScriptManager.shard.topic,
-            keywords: GenerateScriptManager.shard.keywords,
-            secTime: GenerateScriptManager.shard.secTime,
-            balpyoAPIKey: GenerateScriptManager.shard.balpyoAPIKey,
-            test: GenerateScriptManager.shard.test
-        )
-        let nextVC = ScriptLoadingViewController()
-        navigationController?.pushViewController(nextVC, animated: true)
-        NetworkService.shared.generateScriptService.generateScript(bodyDTO: request) { [weak self] response in
-            guard let self = self else { return }
-            switch response {
-            case .success(let data):
-                let nextVC = ScriptResultViewController()
-                nextVC.data = data
-                navigationController?.pushViewController(nextVC, animated: true)
-            default:
-                print("생성 실패")
-            }
         }
     }
 }

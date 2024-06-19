@@ -1,14 +1,14 @@
 //
-//  GenerateScriptViewModel.swift
+//  ScriptTimeManager.swift
 //  Balphyo
 //
-//  Created by jin on 6/17/24.
+//  Created by jin on 6/18/24.
 //
 
 import Foundation
 
-class GenerateScriptManager: ObservableObject {
-    static let shard = GenerateScriptManager()
+class ScriptTimeManager: ObservableObject {
+    static let shard = ScriptTimeManager()
     
     var topic: String = ""
     var keywords: String = ""
@@ -18,5 +18,6 @@ class GenerateScriptManager: ObservableObject {
     var title: String = ""
     var gptId: String = ""
     var script: String = ""
+    var speed: Int = 0
     
 }

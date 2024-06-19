@@ -22,11 +22,13 @@ enum HTTPHeaderFieldValue: String {
     case multipartformData = "multipart/form-data"
     case json = "Application/json"
     case accessToken
+    case audio = "audio/mp3"
 }
 
 enum HTTPHeaderType {
     case plain
     case hasToken
+    case audio
     /*case providerToken
     case refreshToken*/
 }

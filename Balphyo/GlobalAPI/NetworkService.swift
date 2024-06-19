@@ -16,6 +16,7 @@ final class NetworkService {
     let loginService : LoginServiceProtocol = LoginService( apiLogger: APIEventLogger())
     let generateScriptService : GenerateScriptServiceProtocol = GenerateScriptService( apiLogger: APIEventLogger())
     let scriptCrudService : ScriptCrudServiceProtocol = ScriptCrudService( apiLogger: APIEventLogger())
+    let generateAudioService : GenerateAudioServiceProtocol = GenerateAudioService( apiLogger: APIEventLogger())
     
     private var sessionManager: Session = {
         let configuration = URLSessionConfiguration.default

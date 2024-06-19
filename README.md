@@ -96,4 +96,4 @@
 Youtube 동영상
 
  [<img width="856" alt="image" src="https://github.com/serioushyeon/BalphyoIOS/assets/108039053/8af123fe-fae4-401a-bf32-4037e5249e97">
-](https://youtu.be/CYH1Jk34fzk)]
+](https://youtu.be/SnZrh8Kuvt0?si=zfASSXkqVCR2qPUT)
